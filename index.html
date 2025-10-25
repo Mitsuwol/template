@@ -1,90 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>Tomohiro Mitsuhashi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header style="margin: 0; padding: 0; width: 100%; background-color: #1e1e1e; text-align: center;">
-        <h1>Tomohiro Mitsuhashi</h1>
-        <p>Software Developer | AI Enthusiast  </p>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Spiking Neural Networks / Innovation Consulting</p>
+            <h1 class="hero__title">Tomohiro Mitsuhashi</h1>
+            <p class="hero__subtitle">Bridging computational neuroscience, generative AI, and business design to create delightful solutions.</p>
+            <div class="hero__cta">
+                <a class="button button--primary" href="#contact">Get in touch</a>
+                <a class="button button--ghost" href="#achievements">Latest achievements</a>
+            </div>
+        </div>
     </header>
 
-    <section id="profile" style="margin: 0 5%;">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Photo">
-        <p>はじめまして、三橋智大と申します。現在、電気通信大学認定のベンチャー企業「LoQAct」の副代表を務めています。LoQActでは、データ分析や生成AIを活用したソフトウェアの開発を受託しています。</p>
+    <main>
+        <section id="profile" class="section section--highlight">
+            <div class="section__content">
+                <div class="profile__visual">
+                    <div class="profile__image-frame">
+                        <img src="profile.jpg" alt="Portrait of Tomohiro Mitsuhashi">
+                    </div>
+                </div>
+                <div class="profile__text">
+                    <h2 class="section__title">About Me</h2>
+                    <p>はじめまして、三橋智大と申します。電気通信大学認定ベンチャー「LoQAct」の副代表として、データ分析や生成AIを活用したソフトウェア開発を推進しています。宿泊型コワーキングスペース「Mohretu」の立ち上げや新卒採用施策の企画運営にも携わり、社会課題をテクノロジーで解決する仕組みづくりに挑戦しています。</p>
+                    <p>研究では、小脳神経回路のスパイキングニューラルネットワーク（SNN）モデルを用いた運動予測やエネルギー効率の高いAIに関心を持ち、SNNによるLLMの実装にも取り組んでいます。</p>
+                    <p>Hello, I'm Tomohiro Mitsuhashi. Leveraging research in neural simulations, I craft data-driven and generative-AI solutions that deliver real value for businesses and communities.</p>
+                </div>
+            </div>
+        </section>
 
-        <p>また、通学に時間がかかる学生を対象とした宿泊型コワーキングスペース「Mohretu」の設立プロジェクトを進めています。このプロジェクトでは、学生の学びや創造性を支える新しい環境の提供を目指し、2024年11月にピッチ大会で入賞を果たしました。その後、12月からは実装に向けた準備を本格的に進めています。</p>
-            
-        <p>さらに、新卒採用領域での企画運営やイベントの企画にも携わる一方、大学での研究では神経シミュレーションに従事し、脳の機能解明に関心を寄せています。この研究で培ったSNN（スパイキングニューラルネットワーク）の実装技術を活用し、AIの省エネルギー化にも挑戦しています。</p>
-            
-        <p>私のモットーは、「社会課題をITの力でビジネスとして解決する」ことです。これからも新しい挑戦を通じて価値を創造していきたいと考えています。</p>
+        <section id="skills" class="section">
+            <div class="section__header">
+                <h2 class="section__title">Core Skills</h2>
+                <p class="section__subtitle">Technical fluency spanning high-performance computing, machine learning, and product execution.</p>
+            </div>
+            <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">C</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">CUDA / MPI</span>
+                <span class="chip">Spiking Neural Networks</span>
+                <span class="chip">Generative AI Apps</span>
+                <span class="chip">Data Analytics</span>
+                <span class="chip">Product Strategy</span>
+                <span class="chip">Event Orchestration</span>
+            </div>
+        </section>
 
-        <p>Hello, my name is Tomohiro Mitsuhashi. I currently serve as the Vice Representative of "LoQAct," a venture company certified by the University of Electro-Communications. At LoQAct, we specialize in custom software development by leveraging data analysis and generative AI, applying the research expertise I have cultivated at university.</p> 
-        <p>Additionally, I am working on establishing a co-working space project called "Mohretu," designed for students with long commutes. This project aims to provide a new environment that fosters learning and creativity among students. In November 2024, we won an award at a pitch competition, and since December, we have been preparing for its implementation.</p> 
-        <p>Furthermore, I have been involved in planning and managing projects in the new graduate recruitment field, as well as organizing various events. At the same time, my university research focuses on neural simulations, where I am particularly interested in understanding brain functions. Utilizing the skills I have developed in implementing spiking neural networks (SNNs), I am also tackling the challenge of improving AI energy efficiency.</p> 
-        <p>My motto is to "solve social issues through IT-powered business." I am committed to creating value through new challenges and innovative endeavors.</p>
-    </section>
+        <section id="affiliations" class="section section--alt">
+            <div class="section__header">
+                <h2 class="section__title">Affiliations</h2>
+                <p class="section__subtitle">Driving innovation across research, startups, and corporate initiatives.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card__title">LoQAct（電気通信大学認定ベンチャー）</h3>
+                    <p class="card__meta">Vice Representative</p>
+                    <p class="card__description">生成AI・データ分析を活用したソフトウェア開発を主導し、研究知見を社会実装へと展開。</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">石坂産業株式会社</h3>
+                    <p class="card__meta">HR統括推進部 / データ解析担当</p>
+                    <p class="card__description">採用業務を統括しながら、HRデータ分析の推進とGBEF運営メンバーとして体験価値創出に貢献。</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">All bridge 株式会社</h3>
+                    <p class="card__meta">新規事業創出コンサルタント（2025年1月〜）</p>
+                    <p class="card__description">0→1フェーズの戦略立案と検証を担当。<a href="https://allbridge.co.jp/member/" target="_blank" rel="noopener">Member profile</a></p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">GBEF（「体験の機会の場」研究機構事務局）</h3>
+                    <p class="card__meta">運営メンバー</p>
+                    <p class="card__description">多様な社会実験を支える体験デザインを推進。</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="skills" style="margin: 0 5%;">
-        <h2>Skills</h2>
-        <ul>
-            <li>C</li>
-            <li>Python</li>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Machine Learning (Pytorch, numpy, pandas, cupy, SNN, ANN)</li>
-            <li>Software using LLM (Including generative AI)</li>
-            <li>HPC (cuda, MPI)</li>
-        </ul>
-    </section>
+        <section id="achievements" class="section">
+            <div class="section__header">
+                <h2 class="section__title">Selected Achievements</h2>
+                <p class="section__subtitle">Research publications, conference presentations, and competitive highlights.</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline__item">
+                    <span class="timeline__date">2026</span>
+                    <div class="timeline__content">
+                        <h3>JST BOOST 電通大次世代AI人材育成プログラム</h3>
+                        <p>2026年度予約採用。先端AI人材として研究と社会実装の両面から価値創造に挑戦。</p>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date">2025</span>
+                    <div class="timeline__content">
+                        <h3>Neural Networks Journal</h3>
+                        <p>Tomohiro Mitsuhashi, Yusuke Kuniyoshi, Koji Ikezoe, Kazuo Kitamura, Tadashi Yamazaki. “A spiking network model of the cerebellum for predicting movements with diverse complex spikes.” <em>Neural Networks</em>, 193, 107962, 2025.</p>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date">2025</span>
+                    <div class="timeline__content">
+                        <h3>CNS*2025 (Florence, Italy)</h3>
+                        <p>Tomohiro Mitsuhashi, Rin Kuriyama, Tadashi Yamazaki. “Implementation of an SNN-based LLM.” 34th Annual Computational Neuroscience Meeting, July 5–9, 2025.</p>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date">2024</span>
+                    <div class="timeline__content">
+                        <h3>HMS-Harmful Brain Activity Classification</h3>
+                        <p>Kaggle Competition（188位 / 2,768チーム、ブロンズメダル）。データアントレプレナー ビジネスピッチコンテスト 2024 麻布大学賞受賞。</p>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date">2023</span>
+                    <div class="timeline__content">
+                        <h3>日本神経回路学会 / 日本神経科学大会</h3>
+                        <p>Tomohiro Mitsuhashi, Koji Ikezoe, Kazuo Kitamura, Tadashi Yamazaki. 「Learning to shape simple spike trains by experimentally obtained complex spike data in a cerebellar spiking network model.」第33回日本神経回路学会全国大会 (JNNS2023), 東京大学。</p>
+                        <p>Tomohiro Mitsuhashi, Koji Ikezoe, Kazuo Kitamura, Tadashi Yamazaki. 「Computer simulation of shaping simple spike activity by complex spikes obtained from calcium imaging data in cerebellar motor learning.」第46回日本神経科学大会, 仙台国際センター。</p>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date">2023</span>
+                    <div class="timeline__content">
+                        <h3>U☆PoC〜UECアイディア実証コンテスト〜</h3>
+                        <p>LoQActとして実証プロジェクトが採択。<a href="https://www.uec.ac.jp/research/venture/2023/contest_2.html" target="_blank" rel="noopener">プレスリリース</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section id="projects" style="margin: 0 5%;">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>In Lab</h3>
-            <p>Master students</p>
-            <p><a href="https://www.jst.go.jp/program/boost/">JST boost</a> 予約採用生 (2026.4~2029.3)</p>
-            <p>Cerebellum simulation, SNN, LLM</p>
-            <p>Tomohiro Mitsuhashi, Koji Ikezoe, Kazuo Kitamura,Tadashi Yamazaki. Computer simulation of shaping simple spike activity by complex spikes obtained from calcium imaging data in cerebellar motor learning. The 46th Annual Meeting of the Japan Neuroscience Society, SENDAI INTERNATIONAL CENTER. </p>
-            <p>Tomohiro Mitsuhashi, Koji Ikezoe, Kazuo Kitamura, Tadashi Yamazaki. Learning to shape simple spike trains by experimentally obtained complex spike data in a cerebellar spiking network model. 第33回日本神経回路学会全国大会 (JNNS2023), 2023年9月, 東京大学.</p>
-        </div>
-        <div class="project">
-            <h3>Ishizaka Inc</h3>
-            <p>HR統括推進部に所属。採用業務担当。2023年よりデータ解析担当を兼務 <a href="https://ishizaka-group.co.jp">石坂産業株式会社</a></p>
-            <p>GBEF運営メンバー (「体験の機会の場」研究機構事務局) <a href="https://gb-ef.org">GBEF</a></p>
-        </div>
-        <div class="project">
-            <h3>About data science</h3>
-            <p>GCI Summer 2021</p>
-            <p>HMS-Harmful Brain Activity Classification. (2024). Kaggle Competitions. 188th/2768 teams (Bronze Medal).</p>
-            <p>データアントレプレナー ビジネスピッチコンテスト 2024<a href="https://de.uec.ac.jp/2024/11/06/13251/">麻布大学賞</a> <a href="https://www.azabu-u.ac.jp/topics/2024/1107_44852.html">麻布大学プレスリリース</a></p>
-        </div>
-        <div class="project">
-            <h3>LoQAct (電気通信大学認定ベンチャー)</h3>
-            (開発等のご支援などを受け賜わせていただいております。)
-            <h4>表彰</h4>
-            <p>U☆PoC～UECアイディア実証コンテスト～2023<a href="https://www.uec.ac.jp/research/venture/2023/contest_2.html">プレスリリース</a></p>
-        </div>
-        <h2>Archive</h2>
-        <div class="project">
-            <h3>Practica In Members (2022/6~2023/3)</h3>
-            <p>SNSチーム、コンテンツチーム (SNS運用、企画)<a href="https://www.members.co.jp/company/news/2021/1222.html">HP</a></p>
-        </div>
-    </section>
+        <section id="projects" class="section section--alt">
+            <div class="section__header">
+                <h2 class="section__title">Projects &amp; Initiatives</h2>
+                <p class="section__subtitle">From lab to real-world impact.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card__title">Cerebellar Simulation Lab</h3>
+                    <p class="card__meta">Master's Research</p>
+                    <p class="card__description">SNNベースの小脳モデルによる運動予測と複雑スパイクを用いた学習則を研究。SNN×LLMの省電力実装にも挑戦中。</p>
+                    <p class="card__links"><a href="https://www.jst.go.jp/program/boost/" target="_blank" rel="noopener">JST BOOST Program</a></p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">Mohretu</h3>
+                    <p class="card__meta">宿泊型コワーキングスペース</p>
+                    <p class="card__description">長距離通学者に新たな学習環境を提供する宿泊型コワーキングスペースの立ち上げを推進。</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">Recruitment Design</h3>
+                    <p class="card__meta">新卒採用領域</p>
+                    <p class="card__description">採用イベント企画やオンボーディング施策のデザインを支援し、組織と候補者双方の体験価値を最大化。</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title">Practica In Members</h3>
+                    <p class="card__meta">2022年6月〜2023年3月</p>
+                    <p class="card__description">SNS運用・コンテンツ企画チームに所属し、オンラインコミュニティの活性化を推進。<a href="https://www.members.co.jp/company/news/2021/1222.html" target="_blank" rel="noopener">活動紹介</a></p>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact" style="margin: 0 5%;">
-        <h2>Contact</h2>
-        <p>Email: <a href="t.mitsuhashi@infosciteam.com">t.mitsuhashi@infosciteam.com</a></p>
-        <p>GitHub: <a href="https://github.com/Mitsuwol" target="_blank">Mitsuwol</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mitsuhashi-tomohiro-10b813334/" target="_blank">Tomohiro Mitsuhashi</a></p>
-    </section>
+        <section id="contact" class="section contact">
+            <div class="section__header">
+                <h2 class="section__title">Let's Collaborate</h2>
+                <p class="section__subtitle">Research partnerships, product development, and innovation consulting inquiries are welcome.</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__details">
+                    <p><strong>Email</strong><br><a href="mailto:t.mitsuhashi@infosciteam.com" id="email-link">t.mitsuhashi@infosciteam.com</a></p>
+                    <p><strong>GitHub</strong><br><a href="https://github.com/Mitsuwol" target="_blank" rel="noopener">Mitsuwol</a></p>
+                    <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/mitsuhashi-tomohiro-10b813334/" target="_blank" rel="noopener">Tomohiro Mitsuhashi</a></p>
+                </div>
+                <div class="contact__actions">
+                    <button id="copy-email" class="button button--primary" type="button">Copy email address</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer style="margin: 0; padding: 10px 0; width: 100%; background-color: #1e1e1e; text-align: center;">
-        <p>&copy; 2024 Tomohiro Mitsuhashi</p>
+    <footer class="footer">
+        <p>&copy; 2025 Tomohiro Mitsuhashi. Crafted with curiosity and care.</p>
     </footer>
 
     <script src="script.js"></script>
